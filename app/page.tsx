@@ -46,6 +46,19 @@ export default function Home() {
           </div>
         </div>
       </nav>
+      <div>
+        <section id='headline'>
+          <h1 className='text-center'>
+            WAIT! YOUR ORDER IS IN PROGRESS.
+          </h1>
+          <p className='text-center'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+          </p>
+        </section>
+      </div>
+      <footer>
+
+      </footer>
     </main>
   )
 }
