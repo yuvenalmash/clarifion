@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import {GoChevronLeft, GoChevronRight} from 'react-icons/go'
 import {HiOutlineCheckBadge} from 'react-icons/hi2'
+import {HiCheckCircle} from 'react-icons/hi'
 
 export default function Home() {
   return (
@@ -46,7 +47,7 @@ export default function Home() {
           </div>
         </div>
       </nav>
-      <div>
+      <div id='main-body' className='flex flex-col'>
         <section id='headline'>
           <h1 className='text-center'>
             WAIT! YOUR ORDER IS IN PROGRESS.
@@ -54,6 +55,28 @@ export default function Home() {
           <p className='text-center'>
             Lorem ipsum dolor sit amet, consectetur adipiscing
           </p>
+        </section>
+        <section id='progress-status' className='flex justify-between'>
+          <div className='flex flex-col items-center text-center'>
+            <HiCheckCircle id='status-1' />
+            <p className='status-text'>Cart Review</p>
+          </div>
+          <div className='flex flex-col items-center text-center'>
+            <HiCheckCircle id='status-2' />
+            <p className='status-text'>Checkout</p>
+          </div>
+          <div className='flex flex-col items-center text-center'>
+            <p id='status-3' className='border rounded-full w-6 h-6 flex items-center justify-center'>
+              3
+            </p>
+            <p className='status-text'>Special Offer</p>
+          </div>
+          <div className='flex flex-col items-center text-center'>
+            <p id='status-4' className='border rounded-full w-6 h-6 flex items-center justify-center'>
+              4
+            </p>
+            <p className='status-text'>Confirmation</p>
+          </div>
         </section>
       </div>
       <footer>
