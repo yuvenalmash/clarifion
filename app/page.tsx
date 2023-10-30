@@ -9,7 +9,7 @@ import { VscLockSmall } from 'react-icons/vsc'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <nav className="flex flex-col w-screen border border-red-600">
+      <nav className="flex flex-col w-screen">
         <div id="top-nav" className="flex justify-between text-white">
           <button>
             <GoChevronLeft />
