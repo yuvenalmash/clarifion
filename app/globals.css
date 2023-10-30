@@ -185,3 +185,28 @@ nav {
   font-size: 12px;
   font-weight: 500;
 }
+
+#guarantee {
+  color: #4D5254;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#guarantee span {
+  color: #4D5254;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #252F3D;
+  color: #fff;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer hr {
+  border: 1px solid #fff;
+  height: 14px;
+}

@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import {GoChevronLeft, GoChevronRight} from 'react-icons/go'
-import {HiOutlineCheckBadge} from 'react-icons/hi2'
-import {HiCheckCircle} from 'react-icons/hi'
-import {AiFillStar, AiOutlinePercentage, AiOutlineArrowRight} from 'react-icons/ai'
-import {FaCheck} from 'react-icons/fa'
-import {VscLockSmall} from 'react-icons/vsc'
+import { GoChevronLeft, GoChevronRight } from 'react-icons/go'
+import { HiOutlineCheckBadge } from 'react-icons/hi2'
+import { HiCheckCircle } from 'react-icons/hi'
+import { AiFillStar, AiOutlinePercentage, AiOutlineArrowRight } from 'react-icons/ai'
+import { FaCheck } from 'react-icons/fa'
+import { VscLockSmall } from 'react-icons/vsc'
 
 export default function Home() {
   return (
@@ -81,7 +81,7 @@ export default function Home() {
             <p className='status-text'>Confirmation</p>
           </div>
         </section>
-        <section id='product' className='flex flex-col items-center gap-3'>
+        <section id='product' className='flex flex-col items-center gap-6'>
           <p id='offer-statement' className='text-center'>
             <span>ONE TIME ONLY</span> Special Price For 6 EXTRA Clarifion For Only <span>$14Each</span> ($84.00 Total!)
           </p>
@@ -220,10 +220,30 @@ export default function Home() {
               <p className='text-center'>NO THANKS, I DON'T WANT THIS</p>
             </button>
           </div>
+          <div id='guarantee' className='flex gap-2'>
+            <Image
+              src='/guarantee.svg'
+              alt='guarantee logo'
+              width={48}
+              height={48}
+              className=''
+            />
+            <p>
+              If you are not completely thrilled with your Clarifion - We have a <span>30 day satisfaction guarantee.</span> Please refer to our return policy at the bottom of the page for more details. Happy Shopping!
+            </p>
+          </div>
         </section>
       </div>
-      <footer>
-
+      <footer className='flex flex-col items-center justify-center gap-2 w-full'>
+        <div className='flex gap-2'>
+          <p>Copyright (c) 2023</p>
+          <hr />
+          <p>Clarifionsupport@clarifion.com</p>
+        </div>
+        <p className='flex items-center gap-1'>
+          <VscLockSmall className='lock' />
+          Secure 256-bit SSL encryption
+        </p>
       </footer>
     </main>
   )
